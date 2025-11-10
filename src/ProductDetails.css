@@ -1,0 +1,135 @@
+.product-image {
+  width: 200px;        /* Set desired width */
+  height: 200px;       /* Set desired height */
+  object-fit: cover;   /* Fills box, crops if necessary (recommended!) */
+  border-radius: 8px;  /* Optional: rounded corners */
+  background: #f8f8f8; /* Optional: light background for different aspect ratios */
+}
+.product-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 40px auto;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  padding: 24px;
+}
+
+.product-detail-card {
+  display: flex;
+  width: 100%;
+}
+
+.product-image-section {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 32px;
+}
+
+.product-image-large {
+  width: 330px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  margin-bottom: 20px;
+}
+
+.product-info-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.product-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #222;
+}
+
+.product-desc {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 24px;
+}
+
+.product-meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  gap: 32px;
+  font-size: 1rem;
+}
+.product-seller {
+  color: #555;
+}
+.product-price {
+  background: #1da1f2;
+  color: #fff;
+  padding: 6px 20px;
+  font-size: 1.18rem;
+  border-radius: 24px;
+  font-weight: 500;
+}
+
+.product-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.add-to-cart-btn, .buy-now-btn {
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-weight: bold;
+}
+
+.add-to-cart-btn {
+  background: #286090;
+  color: #fff;
+}
+
+.add-to-cart-btn:hover {
+  background: #204d74;
+}
+
+.buy-now-btn {
+  background: #f8b400;
+  color: #222;
+}
+
+.buy-now-btn:hover {
+  background: #f7a000;
+}
+
+/* Loader Spinner */
+.product-detail-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  font-size: 1.2rem;
+  color: #888;
+}
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #333;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 18px;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

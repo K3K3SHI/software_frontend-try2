@@ -1,0 +1,167 @@
+.Panel {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  background: url("/public/ChatGPT\ Image\ Sep\ 23\,\ 2025\,\ 02_14_43\ AM.png") no-repeat center center fixed;
+  background-size: cover;
+  background-position: center -650px;   /* 50px upward */
+
+}
+
+.box {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 32px rgba(21, 34, 50, 0.07);
+  padding: 40px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: box-shadow 0.2s;
+}
+
+.box:hover {
+  box-shadow: 0 12px 32px rgba(21, 34, 50, 0.14);
+}
+
+h2 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #334155;
+  letter-spacing: 1px;
+}
+
+.error {
+  background: #ffe8e6;
+  color: #d93025;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+  border: 1px solid #ffd2cf;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #334155;
+}
+
+.form-control {
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 10px 14px;
+  border: 1px solid #cfcfcf;
+  background: #f9fafb;
+  transition: border-color 0.2s;
+}
+
+.form-control:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 1px 4px rgba(59,130,246,0.07);
+}
+
+.btn-primary {
+  background: #3b82f6;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-size: 17px;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  margin-top: 20px;
+  transition: background 0.13s;
+}
+
+.btn-primary:hover {
+  background: #2563eb;
+}
+
+.d-flex > label {
+  min-width: 120px; /* fixed label width */
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.button-center-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+button.btn-primary {
+  width: auto;
+  padding: 10px 50px;
+}
+
+
+.d-flex > input {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-row > label {
+  flex: 0 0 120px; /* fixed width for label */
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.form-row > input {
+  flex: 1; /* input takes remaining space */
+  max-width: 400px;
+  margin-left: 15px; /* space between label and input */
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 1.5px solid #cfd8dc;
+  background: #f7fafc;
+}
+
+.form-row > input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 6px #3b82f6aa;
+  outline: none;
+  background: #fff;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+}
+
+.form-row > label {
+  flex: 0 0 auto;
+  padding-right: 12px;
+  font-weight: 600;
+  user-select: none;
+  color: #334155;
+}
+
+.form-row > input {
+  flex: 1 1 0;
+  max-width: 50%; /* Limit input width to half of the container or less */
+  margin-left: auto; /* Push input to the right edge */
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  background: #f7fafc;
+  border: 1.5px solid #cfd8dc;
+  box-shadow: inset 0 1px 3px rgb(0 0 0 / 0.06);
+  transition: all 0.3s ease-in-out;
+}
+
+.form-row > input:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 6px #3b82f6aa;
+  background: #fff;
+}

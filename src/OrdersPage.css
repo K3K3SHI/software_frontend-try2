@@ -1,0 +1,94 @@
+.orders-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #b7e5df 0 40%, #d1dbef 100%);
+  padding-top: 48px;
+}
+.orders-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 0 60px 0;
+}
+.orders-empty {
+  color: #888;
+  text-align: center;
+  margin: 58px 0 18px 0;
+  font-size: 1.16em;
+  letter-spacing: .04em;
+}
+.orders-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.order-card {
+  background: #fff;
+  border-radius: 22px;
+  min-width: 285px;
+  max-width: 305px;
+  flex: 1 0 260px;
+  box-shadow: 0 4px 22px #0001;
+  padding: 21px 22px 10px 22px;
+  position: relative;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.18s;
+}
+.order-card:hover {
+  box-shadow: 0 8px 32px #0002, 0 2px 12px #b7e5df inset;
+}
+.order-status-box {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+}
+.status-complete {
+  background: #43c463;
+  color: #fff;
+  font-weight: 600;
+  padding: 3px 16px;
+  border-radius: 14px;
+  font-size: 0.98em;
+}
+.status-pending {
+  background: #ffe993;
+  color: #665502;
+  font-weight: 600;
+  padding: 3px 16px;
+  border-radius: 14px;
+  font-size: 0.98em;
+}
+.order-card-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+  margin-top: 15px;
+}
+.order-date {
+  font-size: .99em;
+  color: #2980b9;
+}
+.order-total {
+  background: #2196f3;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 14px;
+  padding: 2px 13px;
+  font-size: 1.07em;
+}
+.order-address {
+  color: #555;
+  font-size: .98em;
+  margin-bottom: 7px;
+}
+.order-itemslist {
+  margin: 9px 0 3px 0;
+}
+.order-itemslist ul {
+  margin: 4px 0 0 15px;
+  padding: 0;
+  font-size: .98em;
+  color: #3a4955;
+}
