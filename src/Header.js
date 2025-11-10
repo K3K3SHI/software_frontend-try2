@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useCart } from "./cartContext";             // <-- import useCart
 
 function Header() {
-  //const { user, setUser } = useContext(UserContext);
+  const { user, setUser } = useContext(UserContext);
   const navigate = useNavigate();
   const { cart } = useCart();                       // <-- get cart context
 

@@ -10,7 +10,7 @@ function ProductDetail() {
   const { addToCart } = useCart();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/product/${id}`)
+    fetch(`https://flask-backend-production-ada1.up.railway.app/product/${id}`)
       .then(res => res.json())
       .then(data => setProduct(data.product))
       .catch(err => console.error("Error fetching product:", err));
@@ -31,7 +31,7 @@ function ProductDetail() {
       <div className="product-detail-card">
         <div className="product-image-section">
           <img
-            src={`http://localhost:5000${product.image}`}
+            src={`https://flask-backend-production-ada1.up.railway.app${product.image}`}
             alt={product.name}
             className="product-image-large"
           />

@@ -4,12 +4,12 @@ import { UserContext } from "./App";
 import buyImage from "./assets/buy.jpg";
 import saleImage from "./assets/sale.jpg";
 import "./HomePage.css";
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Header from "./Header";
 
 function HomePage() {
-  //const { user, setUser } = useContext(UserContext);
+  const { user, setUser } = useContext(UserContext);
   const navigate = useNavigate();
 
 
@@ -45,7 +45,7 @@ function HomePage() {
         <div className="widget">👤 Profile</div>
       </div>
 
-      
+      {user ? <p> {user.email}</p> : <p>You are not logged in.</p>}
 
       <div className="footer">
         <p>&copy; 2025 MyStore. All rights reserved.</p>
