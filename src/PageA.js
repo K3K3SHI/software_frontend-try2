@@ -25,7 +25,7 @@ useEffect(() => {
       return;
     }
     try {
-      const res = await axios.get("https://flask-backend-production-ada1.up.railway.app/filter_products", {
+      const res = await axios.get("https://flaskbackend-try2-production.up.railway.app/filter_products", {
         params: { email }
       });
       if (res.data && res.data.products) {
@@ -72,7 +72,7 @@ useEffect(() => {
     formData.append("color", color);
 
     try {
-      const res = await axios.post(" https://flask-backend-production-ada1.up.railway.app/products", formData, {
+      const res = await axios.post(" https://flaskbackend-try2-production.up.railway.app/products", formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
 
@@ -106,7 +106,7 @@ useEffect(() => {
         {products.map((p, idx) => (
           <div className="product-card" key={idx}>
             {/* CHANGED: Use proper backend image URL */}
-            <img src={`https://flask-backend-production-ada1.up.railway.app${p.image}`} alt={p.name} />
+            <img src={`https://flaskbackend-try2-production.up.railway.app${p.image}`} alt={p.name} />
             <h3>{p.name}</h3>
             <p>{p.details}</p>
           </div>

@@ -10,7 +10,7 @@ function StripeCheckoutForm({ total, onPaymentSuccess }) {
   const [paying, setPaying] = useState(false);
 
   useEffect(() => {
-    fetch("https://flask-backend-production-ada1.up.railway.app/create-payment-intent", {
+    fetch("https://flaskbackend-try2-production.up.railway.app/create-payment-intent", {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({ amount: total })
