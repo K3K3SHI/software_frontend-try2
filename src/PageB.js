@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./PageA.css";
 import Header from "./Header";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 const PageB = () => {
   const [products, setProducts] = useState([]);
 
   // Fetch products from Flask backend
   useEffect(() => {
-    fetch("http://localhost:5000/productlist")
+    fetch("https://flask-backend-production-ada1.up.railway.app/productlist")
       .then((res) => res.json())
       .then((data) => setProducts(data.product))
       .catch((err) => console.error("Error fetching products:", err));
@@ -25,7 +25,7 @@ const PageB = () => {
           <div className="product-card" key={product.id || index}>
             <div className="product-image-wrapper">
               <img
-                src={`http://localhost:5000${product.image}`}
+                src={`https://flask-backend-production-ada1.up.railway.app${product.image}`}
                 alt={product.name}
                 className="product-image"
               />

@@ -4,12 +4,12 @@ import { UserContext } from "./App";
 import buyImage from "./assets/buy.jpg";
 import saleImage from "./assets/sale.jpg";
 import "./HomePage.css";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 import Header from "./Header";
 
 function HomePage() {
-  const { user, setUser } = useContext(UserContext);
+  //const { user, setUser } = useContext(UserContext);
   const navigate = useNavigate();
 
 

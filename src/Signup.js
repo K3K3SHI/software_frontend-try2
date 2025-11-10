@@ -23,7 +23,7 @@ export default function Signup() {
       first_name: form.firstName,
       last_name: form.lastName
     };
-    const res = await fetch("http://localhost:5000/register", {
+    const res = await fetch("https://flask-backend-production-ada1.up.railway.app/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload)
